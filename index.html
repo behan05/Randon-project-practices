@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <input type="file" value="" id="file" draggable="true" />
+      <button type="submit">Upload</button>
+    </form>
+    <form action="#" id="urlForm" method="get">
+      <input
+        type="url"
+        value=""
+        id="url-input"
+        placeholder="Enter Image URL..."
+        required
+      />
+      <button type="submit" id="urlBtn">Add URL</button>
+    </form>
+
+    <div id="progress">
+      <div id="progress-bar"></div>
+      <h3></h3>
+    </div>
+    
+    <div id="status"></div>
+
+    <div class="img-container">
+      <img src="" width="300" alt="uploaded image profile" />
+      <button id="download">Download</button>
+    </div>
+
+    <div class="error">Please Select File!</div>
+    <script src="./index.js" defer="true"></script>
+  </body>
+</html>
