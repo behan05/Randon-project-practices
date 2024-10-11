@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dark Mode</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+      }
+
+      header {
+        background-color: #ddd;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+        color: green;
+        letter-spacing: 0.2rem;
+        font-weight: 900;
+      }
+
+      i {
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+      .fa-sun {
+        color: darkblue;
+      }
+      .fa-moon {
+        color: #000;
+      }
+    p {
+        padding: 2rem;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h2>Company Logo</h2></div>
+      <div class="theme">
+        <i class="fa-regular fa-sun" id="lightMode"></i>
+        <i class="fa-regular fa-moon" id="darkMode" style="display: none"></i>
+      </div>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore facilis ut saepe illo obcaecati quis molestias laborum ex, debitis eaque tenetur ducimus deserunt neque voluptatum reprehenderit vel at quaerat.</p>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
