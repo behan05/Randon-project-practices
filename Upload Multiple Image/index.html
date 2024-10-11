@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload multiple File</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: lightslategray;
+        padding: 1rem;
+      }
+
+      input {
+        border: 1px solid #fff;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+        text-shadow: 0 0 0.2rem #000;
+        border-radius: 12px;
+      }
+
+      button {
+        font-size: 1.1rem;
+        padding: 1rem;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        color: #fff;
+        font-weight: 900;
+        transition: color 0.8s ease, background-color 0.8s ease;
+      }
+      button:active {
+        color: red;
+      }
+      button:hover {
+        color: green;
+        background-color: lightseagreen;
+      }
+      .img {
+        width: 250px;
+        height: 250px;
+        margin: 2rem;
+        background-color: green;
+        border-radius: 12px;
+        filter: drop-shadow(0 0 0.5rem red);
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <input
+        type="file"
+        name="file"
+        value=""
+        id="input-file"
+        multiple
+        required
+      />
+      <button id="uploadBtn">Upload Confirm</button>
+    </header>
+    <main></main>
+    <script src="./script.js"></script>
+  </body>
+</html>
