@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkcyan;
+  padding: 2rem;
+}
+
+input {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+
+progress {
+  padding: 1rem 2rem;
+}
+button {
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.imgClass {
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(0 0 1rem red);
+  object-fit: cover;
+}
+#progress {
+    width: 100%; /* Set width for better visibility */
+    height: 20px; /* Adjust height */
+    appearance: none; /* Remove default styling */
+}
+#progressBar::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+#progressBar::-webkit-progress-value {
+  background-color: #4caf50; /* Progress color */
+  transition: width 0.5s ease; /* Transition effect */
+}
